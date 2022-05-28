@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: PartsUnlimited 
+- task: Mytask
   inputs:
     provider: 'azurerm'
     command: 'init'
@@ -21,7 +21,7 @@ steps:
     backendAzureRmContainerName: 'testcontainer1'
     backendAzureRmKey: 'tf/terraform.tfstate'
 
-- task: PartsUnlimited 
+- task: mytask
   inputs:
     provider: 'azurerm'
     command: 'apply'
