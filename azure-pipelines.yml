@@ -19,7 +19,7 @@ steps:
     backendAzureRmResourceGroupName: 'sowmithri-rg'
     backendAzureRmStorageAccountName: 'storemfwttwheqnyuk'
     backendAzureRmContainerName: 'testcontainer1'
-    backendAzureRmKey: 'tf/terraform.tfstate'
+  
 
 - task: TerraformTaskV1@0
   inputs:
