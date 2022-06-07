@@ -14,17 +14,19 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/StorageAccount-Terraform'
+    workingDirectory: 'StorageAccount-Terraform'
     backendServiceArm: 'Terraform-saw'
     backendAzureRmResourceGroupName: 'sowmithri-rg'
     backendAzureRmStorageAccountName: 'storemfwttwheqnyuk'
     backendAzureRmContainerName: 'testcontainer1'
     backendAzureRmKey: 'tf/terraform.tfstate'
+    providerAzureRmSubscriptionId: 'LTTS_DevOps (488407a5-b2e4-4437-a2df-ae3d974d0375)'
   
 
 - task: TerraformTaskV1@0
   inputs:
     provider: 'azurerm'
     command: 'apply'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/StorageAccount-Terraform'
+    workingDirectory: 'StorageAccount-Terraform'
     environmentServiceNameAzureRM: 'Terraform-saw'
+    providerAzureRmSubscriptionId: 'LTTS_DevOps (488407a5-b2e4-4437-a2df-ae3d974d0375)'
