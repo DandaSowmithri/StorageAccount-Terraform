@@ -14,7 +14,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: '$(azure-pipelines.yml)'
+    workingDirectory: '$(/usr/local/bin/terraform)'
     backendServiceArm: 'Terraform-saw'
     backendAzureRmResourceGroupName: 'sowmithri-rg'
     backendAzureRmStorageAccountName: 'storemfwttwheqnyuk'
@@ -26,5 +26,5 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'apply'
-    workingDirectory: '$(azure-pipelines.yml)'
+    workingDirectory: '$(/usr/local/bin/terraform)'
     environmentServiceNameAzureRM: 'Terraform-saw'
