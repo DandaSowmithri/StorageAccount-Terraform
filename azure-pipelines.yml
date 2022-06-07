@@ -10,11 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: TerraformTaskV1@0
-  inputs:
-    command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform/terraform'
-- task: TerraformTaskV1@0
+- task: Terraform
   inputs:
     provider: 'azurerm'
     command: 'init'
