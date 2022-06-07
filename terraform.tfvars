@@ -1,3 +1,2 @@
-resourceGroupName = "dev2"
-
+resourceGroupName = "sowmithri-rg"
 location = "eastus"
