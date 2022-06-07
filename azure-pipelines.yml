@@ -27,3 +27,18 @@ steps:
     command: 'apply'
     workingDirectory: 'StorageAccount-Terraform'
     environmentServiceNameAzureRM: 'LTTS_DevOps (488407a5-b2e4-4437-a2df-ae3d974d0375)'
+    
+    resources:        # types: pipelines | builds | repositories | containers | packages
+  pipelines:
+  - pipeline: string  # identifier for the resource used in pipeline resource variables
+    project: string # project for the source; optional for current project
+    source: string  # name of the pipeline that produces an artifact
+    version: string  # the pipeline run number to pick the artifact, defaults to latest pipeline successful across all stages; Used only for manual or scheduled triggers
+    branch: string  # branch to pick the artifact, optional; defaults to all branches; Used only for manual or scheduled triggers
+    tags: [ string ] # list of tags required on the pipeline to pickup default artifacts, optional; Used only for manual or scheduled triggers
+    trigger:     # triggers aren't enabled by default unless you add trigger section to the resource
+      branches:  # branch conditions to filter the events, optional; Defaults to all branches.
+        include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
+        exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
+      tags: [ string ]  # list of tags to evaluate for trigger event, optional
+      stages: [ string ] # list of stages to evaluate for trigger event, optional
