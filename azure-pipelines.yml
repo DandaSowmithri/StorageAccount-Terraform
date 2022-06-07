@@ -14,7 +14,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/StorageAccount-Terraform'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/usr/local/bin/terraform'
     backendServiceArm: 'Terraform-saw'
     backendAzureRmResourceGroupName: 'sowmithri-rg'
     backendAzureRmStorageAccountName: 'storemfwttwheqnyuk'
@@ -26,5 +26,5 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'apply'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/StorageAccount-Terraform'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/usr/local/bin/terraform'
     environmentServiceNameAzureRM: 'Terraform-saw'
