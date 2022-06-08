@@ -11,7 +11,7 @@ pool:
 
 steps:
 
-- task: TerraformInstaller@0
+- task: charleszipp.azure-pipelines-tasks-terraform
   displayName: 'Install Terraform 0.7.8'
   inputs:
     terraformVersion: 0.7.8
