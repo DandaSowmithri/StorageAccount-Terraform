@@ -11,21 +11,11 @@ pool:
 
 steps:
 
-- task: charleszipp.azure-pipelines-tasks-terraform@0
-  displayName: 'Install Terraform 0.7.8'
-  inputs:
-    terraformVersion: 0.7.8
-- task: TerraformTaskV1@0
-  displayName: 'Terraform : init'
-  inputs:
-    command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform/terraform'
-
 - task: TerraformTaskV1@0
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform/terraform'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
     backendServiceArm: 'Terraform-saw'
     backendAzureRmResourceGroupName: 'sowmithri-rg'
     backendAzureRmStorageAccountName: 'storemfwttwheqnyuk'
@@ -38,6 +28,6 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'apply'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform/terraform'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
     environmentServiceNameAzureRM: 'Terraform-saw'
     providerAzureRmSubscriptionId: 'LTTS_DevOps (488407a5-b2e4-4437-a2df-ae3d974d0375)'
