@@ -27,11 +27,11 @@ stages:
         provider: 'azurerm'
         command: 'init'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
-        backendServiceArm: '<Terraform-saw>'
-        backendAzureRmResourceGroupName: '<my-first-terraform-rg>'
-        backendAzureRmStorageAccountName: '<firststorage>'
-        backendAzureRmContainerName: '<test container1>'
-        backendAzureRmKey: '<terraform.tfstate>'
+        backendServiceArm: 'Terraform-saw'
+        backendAzureRmResourceGroupName: 'my-first-terraform-rg'
+        backendAzureRmStorageAccountName: 'firststorage'
+        backendAzureRmContainerName: 'test container1'
+        backendAzureRmKey: 'terraform.tfstate'
 
     - task: TerraformTaskV1@0
       displayName: 'Terraform Plan'
@@ -39,7 +39,7 @@ stages:
         provider: 'azurerm'
         command: 'plan'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
-        environmentServiceNameAzureRM: '<Terraform-saw>'
+        environmentServiceNameAzureRM: 'Terraform-saw'
 
     - task: TerraformTaskV1@0
       displayName: 'Terraform Apply'
@@ -47,4 +47,4 @@ stages:
         provider: 'azurerm'
         command: 'apply'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
-        environmentServiceNameAzureRM: '<Terraform-saw>'
+        environmentServiceNameAzureRM: 'Terraform-saw'
