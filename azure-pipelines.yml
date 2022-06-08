@@ -14,6 +14,7 @@ steps:
   inputs:
     terraformVersion: 'latest'
     backendServiceArm: 'Terraform-saw'
+    backendAzureRmResourceGroupName: 'sowmithri-rg'
     backendAzureRmStorageAccountName: 'storemfwttwheqnyuk'
     backendAzureRmContainerName: 'testcontainer1'
     backendAzureRmKey: 'tf/terraform.tfstate'
