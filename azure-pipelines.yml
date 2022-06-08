@@ -12,7 +12,7 @@ pool:
 steps:
 - task: TerraformTaskV1@0
   inputs:
-  terraformVersion: 'latest'
+   terraformVersion: 'latest'
 
 -  task: TerraformTaskV1@0
    inputs:
