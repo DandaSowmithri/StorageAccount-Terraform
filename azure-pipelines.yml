@@ -12,11 +12,8 @@ pool:
 steps:
 
 #- task: TerraformTaskV1@0
-- task: TerraformInstaller@0
   inputs:
     terraformVersion: 'latest'
-
-  inputs:
     provider: 'azurerm'
     command: 'init'
     workingDirectory: 'StorageAccount-Terraform'
