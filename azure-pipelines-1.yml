@@ -18,7 +18,7 @@ stages:
     pool:
       vmImage: 'ubuntu-latest'
     steps:
-    - task: Azure Pipelines Terraform Tasks@0
+    - task: TerraformTaskV1@0
       displayName: 'Install Terraform'
       inputs:
         terraformVersion: '0.7.8'
