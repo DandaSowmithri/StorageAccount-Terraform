@@ -12,12 +12,7 @@ pool:
 steps:
 - task: TerraformTaskV1@0
   inputs:
-    terraformVersion: 'latest'
-    backendServiceArm: 'Terraform-saw'
-    backendAzureRmResourceGroupName: 'sowmithri-rg'
-    backendAzureRmStorageAccountName: 'storemfwttwheqnyuk'
-    backendAzureRmContainerName: 'testcontainer1'
-    backendAzureRmKey: 'tf/terraform.tfstate'
+  terraformVersion: 'latest'
 
 -  task: TerraformTaskV1@0
    inputs:
