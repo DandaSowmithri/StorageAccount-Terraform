@@ -15,7 +15,7 @@ steps:
     terraformVersion: 'latest'
 
 -  task: TerraformTaskV1@0
-  inputs:
+   inputs:
     provider: 'azurerm'
     command: 'init'
     workingDirectory: 'StorageAccount-Terraform'
