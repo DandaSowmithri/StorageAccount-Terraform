@@ -15,6 +15,7 @@ steps:
     terraformVersion: 'latest'
     backendServiceArm: 'Terraform-saw'
     backendAzureRmStorageAccountName: 'storemfwttwheqnyuk'
+    backendAzureRmContainerName: 'testcontainer1'
 
 -  task: TerraformTaskV1@0
    inputs:
