@@ -15,6 +15,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
+    commandOptions: -backend=false
     workingDirectory: 'StorageAccount-Terraform'
     backendServiceArm: 'Terraform-saw'
     backendAzureRmResourceGroupName: 'sowmithri-rg'
