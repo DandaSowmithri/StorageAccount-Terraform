@@ -32,6 +32,7 @@ stages:
         backendAzureRmStorageAccountName: 'firststorage'
         backendAzureRmContainerName: 'test container1'
         backendAzureRmKey: 'terraform.tfstate'
+        providerAzureRmSubscriptionId: 'LTTS_DevOps (488407a5-b2e4-4437-a2df-ae3d974d0375)'
 
     - task: TerraformTaskV1@0
       displayName: 'Terraform Plan'
@@ -40,6 +41,7 @@ stages:
         command: 'plan'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
         environmentServiceNameAzureRM: 'Terraform-saw'
+        providerAzureRmSubscriptionId: 'LTTS_DevOps (488407a5-b2e4-4437-a2df-ae3d974d0375)'
 
     - task: TerraformTaskV1@0
       displayName: 'Terraform Apply'
@@ -48,3 +50,4 @@ stages:
         command: 'apply'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
         environmentServiceNameAzureRM: 'Terraform-saw'
+        providerAzureRmSubscriptionId: 'LTTS_DevOps (488407a5-b2e4-4437-a2df-ae3d974d0375)'
