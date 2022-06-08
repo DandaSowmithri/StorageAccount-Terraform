@@ -15,7 +15,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: 'StorageAccount-Terraform'
+    workingDirectory: 'DandaSowmithri/StorageAccount-Terraform'
     backendServiceArm: 'Terraform-saw'
     backendAzureRmResourceGroupName: 'sowmithri-rg'
     backendAzureRmStorageAccountName: 'storemfwttwheqnyuk'
@@ -28,6 +28,6 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'apply'
-    workingDirectory: 'StorageAccount-Terraform'
+    workingDirectory: 'DandaSowmithri/StorageAccount-Terraform'
     environmentServiceNameAzureRM: 'Terraform-saw'
     providerAzureRmSubscriptionId: 'LTTS_DevOps (488407a5-b2e4-4437-a2df-ae3d974d0375)'
