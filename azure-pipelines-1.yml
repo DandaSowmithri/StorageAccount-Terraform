@@ -18,7 +18,7 @@ stages:
     pool:
       vmImage: 'ubuntu-latest'
     steps:
-    - task: TerraformInstaller@0
+    - task: azure-pipeline-task-terraforminstaller@0
       displayName: 'Install Terraform'
       inputs:
         terraformVersion: '0.14.4'
