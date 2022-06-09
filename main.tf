@@ -2,7 +2,7 @@ terraform {
 
   backend "azurerm" {
 
-    resource_group_name = "dev2"
+    resource_group_name = "sowmithri-rg"
 
     storage_account_name = "storemfwmw3heqnyuk"
 
@@ -15,10 +15,10 @@ terraform {
 }
 provider "azurerm" {
 
-  version = "2.0.0"
-
   features {}
-
+  
+  version = "2.0.0"
+  
 }
 resource "azurerm_storage_account" "TechTargetSG" {
 
