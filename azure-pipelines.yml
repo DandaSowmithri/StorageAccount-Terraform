@@ -40,7 +40,7 @@ steps:
 
     command: 'init'
 
-    workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
+    workingDirectory: 'StorageAccount-Terraform'
 
     backendServiceArm: 'Terraform-saw'
 
