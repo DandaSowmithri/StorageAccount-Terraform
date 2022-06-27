@@ -1,2 +1,2 @@
-resourceGroupName = "sowmithri-rg"
+resourceGroupName = "sowmithri-rg-tf"
 location = "eastus"
