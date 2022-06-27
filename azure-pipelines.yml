@@ -42,17 +42,17 @@ steps:
 
     workingDirectory: 'StorageAccount-Terraform'
 
-    backendServiceArm: 'Terraform-saw'
+    backendServiceArm: 'terraform-spn'
 
-    backendAzureRmResourceGroupName: 'sowmithri-rg'
+    backendAzureRmResourceGroupName: 'sowmithri-rg-tf'
 
-    backendAzureRmStorageAccountName: 'storemfwttwheqnyuk'
+    backendAzureRmStorageAccountName: 'store123'
 
-    backendAzureRmContainerName: 'testcontainer1'
+    backendAzureRmContainerName: 'testcontainer123'
 
     backendAzureRmKey: 'tf/terraform.tfstate'
 
-    providerAzureRmSubscriptionId: 'LTTS_DevOps (488407a5-b2e4-4437-a2df-ae3d974d0375)'
+    providerAzureRmSubscriptionId: 'Pay-As-You-Go (841f641a-e7a5-4f1f-93a8-f768f9d0640f)'
 
   
 
@@ -68,6 +68,6 @@ steps:
 
     workingDirectory: 'StorageAccount-Terraform'
 
-    environmentServiceNameAzureRM: 'Terraform-saw'
+    environmentServiceNameAzureRM: 'terraform-spn'
 
-    providerAzureRmSubscriptionId: 'LTTS_DevOps (488407a5-b2e4-4437-a2df-ae3d974d0375)'
+    providerAzureRmSubscriptionId: 'Pay-As-You-Go (841f641a-e7a5-4f1f-93a8-f768f9d0640f)'
