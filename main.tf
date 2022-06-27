@@ -2,11 +2,11 @@ terraform {
 
   backend "azurerm" {
 
-    resource_group_name = "sowmithri-rg"
+    resource_group_name = "sowmithri-rg-tf"
 
-    storage_account_name = "storemfwmw3heqnyuk"
+    storage_account_name = "store123"
 
-    container_name = "testcontainer"
+    container_name = "testcontainer123"
 
     key = "terraform.state"
 
@@ -20,9 +20,9 @@ provider "azurerm" {
   version = "2.0.0"
   
 }
-resource "azurerm_storage_account" "TechTargetSG" {
+resource "azurerm_storage_account" "TechTargetSG456" {
 
-Name	= "ttstorage92"
+Name	= "ttstorage789"
 resource_group_name	= var.resourceGroupName
 Location	=	var.location
 account_tier	=	"Standard"
