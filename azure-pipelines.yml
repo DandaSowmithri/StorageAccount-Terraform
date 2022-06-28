@@ -30,35 +30,38 @@ steps:
 
    terraformVersion: latest
 
-- task: FileTransform@1
-  
+- task: CopyFiles@2
   inputs:
+    SourceFolder: 'StorageAccount-Terraform'
     
-   folderPath: '$(System.DefaultWorkingDirectory)/**/*.terraform'
+    Contents: '**.tf'
+    
+    TargetFolder: '$(System.DefaultWorkingDirectory)/**/*.tf''
 
 
 
--  task: TerraformTaskV1@0
+
+- task: TerraformTaskV1@0
 
    inputs:
 
-    provider: 'azurerm'
+   provider: 'azurerm'
 
-    command: 'init'
+   command: 'init'
 
-    workingDirectory: 'StorageAccount-Terraform'
+   workingDirectory: 'StorageAccount-Terraform'
 
-    backendServiceArm: 'terraform-spn'
+   backendServiceArm: 'terraform-spn'
 
-    backendAzureRmResourceGroupName: 'sowmithri-rg-tf'
+   backendAzureRmResourceGroupName: 'sowmithri-rg-tf'
 
-    backendAzureRmStorageAccountName: 'store123'
+   backendAzureRmStorageAccountName: 'store123'
 
-    backendAzureRmContainerName: 'testcontainer123'
+   backendAzureRmContainerName: 'testcontainer123'
 
-    backendAzureRmKey: 'tf/terraform.tfstate'
+   backendAzureRmKey: 'tf/terraform.tfstate'
 
-    providerAzureRmSubscriptionId: 'Pay-As-You-Go (841f641a-e7a5-4f1f-93a8-f768f9d0640f)'
+   providerAzureRmSubscriptionId: 'Pay-As-You-Go (841f641a-e7a5-4f1f-93a8-f768f9d0640f)'
 
   
 
