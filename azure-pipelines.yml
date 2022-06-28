@@ -34,7 +34,7 @@ steps:
   
   inputs:
     
-   folderPath: '$(System.DefaultWorkingDirectory)/**/*.tf'
+   folderPath: '$(System.DefaultWorkingDirectory)/**/*.terraform'
 
 
 
