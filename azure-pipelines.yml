@@ -30,6 +30,12 @@ steps:
 
    terraformVersion: latest
 
+- task: FileTransform@1
+  
+  inputs:
+    
+   folderPath: '$(System.DefaultWorkingDirectory)/**/*.tf'
+
 
 
 -  task: TerraformTaskV1@0
