@@ -40,9 +40,9 @@ steps:
 
     command: 'init'
 
-    workingDirectory: 'StorageAccount-terraform'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
 
-    backendServiceArm: 'terraform-spn'
+    backendServiceArm: 'sowmithri-spn'
 
     backendAzureRmResourceGroupName: 'sowmithri-rg-tf'
 
@@ -68,6 +68,6 @@ steps:
 
     workingDirectory: 'StorageAccount-terraform'
 
-    environmentServiceNameAzureRM: 'terraform-spn'
+    environmentServiceNameAzureRM: 'sowmithri-spn'
 
     providerAzureRmSubscriptionId: 'Pay-As-You-Go (841f641a-e7a5-4f1f-93a8-f768f9d0640f)'
