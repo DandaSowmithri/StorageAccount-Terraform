@@ -40,8 +40,6 @@ steps:
 
     command: 'init'
 
-    workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
-
     backendServiceArm: 'sowmithri-spn'
 
     backendAzureRmResourceGroupName: 'sowmithri-rg-tf'
