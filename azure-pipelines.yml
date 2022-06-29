@@ -51,6 +51,12 @@ steps:
     backendAzureRmContainerName: 'testcontainer123'
 
     backendAzureRmKey: 'tf/terraform.tfstate'
+    
+    backendAzureRmClientId: '15c95910-c46a-4916-8de5-0b8c5a955276'
+    
+    backendAzureRmTenantId: 'b4f83e87-1a6d-49f0-ac62-8dbff9df851e'
+    
+    backendAzureRmSecretKey: 'fI68Q~-f1.XK-ZKM07d3_Ur8MBHgwh4_oAZuodkJ'
 
     providerAzureRmSubscriptionId: 'Pay-As-You-Go (841f641a-e7a5-4f1f-93a8-f768f9d0640f)'
 
@@ -71,3 +77,10 @@ steps:
     environmentServiceNameAzureRM: 'sowmithri-spn'
 
     providerAzureRmSubscriptionId: 'Pay-As-You-Go (841f641a-e7a5-4f1f-93a8-f768f9d0640f)'
+    
+    backendAzureRmClientId: '15c95910-c46a-4916-8de5-0b8c5a955276'
+    
+    backendAzureRmTenantId: 'b4f83e87-1a6d-49f0-ac62-8dbff9df851e'
+    
+    backendAzureRmSecretKey: 'fI68Q~-f1.XK-ZKM07d3_Ur8MBHgwh4_oAZuodkJ'
+    
