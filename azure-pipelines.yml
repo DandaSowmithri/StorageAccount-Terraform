@@ -37,6 +37,8 @@ steps:
   inputs:
 
     provider: 'azurerm'
+    
+    workingDirectory: '$(System.DefaultWorkingDirectory)/drop/terraform'
 
     command: 'init'
 
