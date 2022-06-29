@@ -38,7 +38,7 @@ steps:
 
     provider: 'azurerm'
     
-    workingDirectory: '$(System.DefaultWorkingDirectory)/drop/terraform'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/opt/hostedtoolcache/terraform/1.2.3/x64/terraform'
 
     command: 'init'
 
