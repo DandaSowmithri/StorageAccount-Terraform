@@ -24,11 +24,11 @@ steps:
 
 - task: charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-installer.TerraformInstaller@0
 
-  displayName: 'Install Terraform 1.2.3'
+  displayName: 'use terraform latest'
 
   inputs:
 
-   terraformVersion: 1.2.3
+   terraformVersion: latest
 
 
 
